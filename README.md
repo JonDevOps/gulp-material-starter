@@ -18,6 +18,7 @@ This was built from [animsaj](https://github.com/animsaj/gulp-materialize-starte
 
 - Fonts referred by cdn, so font folder is empty.
 - Font awesome
+- devicons
 
 ## Gulp Tasks:
 

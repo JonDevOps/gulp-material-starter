@@ -34,7 +34,7 @@ gulp.task('watch', function() {
   gulp.watch('app/sass/**/*.sass', ['sass']);
   gulp.watch('app/views/**/*.pug', ['pug']);
   gulp.watch('app/js/**/*.js', browserSync.reload);
-  gulp.watch('app/*.html').on('change', browserSync.reload);
+  gulp.watch('app/*.html', browserSync.reload);
 });
 
 gulp.task('useref', function() {

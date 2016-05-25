@@ -1,6 +1,18 @@
 # Gulp starter with materialize.css
 
-materialize.css and materialize.js included. Fonts referred by cdn, so font folder is empty. On the gulp side there are utilities listed bellow
+This was built from [animsaj](https://github.com/animsaj/gulp-materialize-starter) started, and I decided to fork hers and starter from there as a way to provide credit.
+
+## Resources Included:
+
+- materialize.css
+- materialize.js
+- Pug sample page
+- Sass sample code
+- Fonts referred by cdn, so font folder is empty. 
+
+## Gulp Tasks:
+
+On the gulp side there are utilities listed bellow
 
 - compile sass
 - live browser reload

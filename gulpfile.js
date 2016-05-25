@@ -63,8 +63,8 @@ gulp.task('clean:dist', function() {
   return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
 });
 
-gulp.task('clean:dist', function() {
-  return del.sync(['app/css/*.css', 'app/images', 'app/images/**/*', 'app/index.html', 'app/js/*.js']);
+gulp.task('clean:app', function() {
+  return del.sync(['!app/css/main.css', 'app/index.html', '!app/js/bundle.js']);
 });
 
 gulp.task('pug', function buildHTML() {

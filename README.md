@@ -2,13 +2,22 @@
 
 This was built from [animsaj](https://github.com/animsaj/gulp-materialize-starter) started, and I decided to fork hers and starter from there as a way to provide credit.
 
-## Resources Included:
+## Local Resources Included:
 
 - materialize.css
 - materialize.js
 - Pug sample page
 - Sass sample code
-- Fonts referred by cdn, so font folder is empty. 
+- jQuery
+- Material Icons
+- Material Fonts
+- normalize.js
+- logo.jpg
+
+## Remote Resources:
+
+- Fonts referred by cdn, so font folder is empty.
+- Font awesome
 
 ## Gulp Tasks:
 

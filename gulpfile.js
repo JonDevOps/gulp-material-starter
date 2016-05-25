@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var browserSync = require('browser-sync');
+var browserSync = require('browser-sync').create();
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
@@ -16,7 +16,7 @@ var watch = require('gulp-watch')
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: 'app'
+      baseDir: './app'
     }
   });
 });
@@ -32,8 +32,9 @@ gulp.task('sass', function() {
 
 gulp.task('watch', function() {
   gulp.watch('app/sass/**/*.sass', ['sass']);
-  gulp.watch('app/*.html', browserSync.reload);
+  gulp.watch('app/views/**/*.pug', ['pug']);
   gulp.watch('app/js/**/*.js', browserSync.reload);
+  gulp.watch('app/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('useref', function() {
@@ -73,6 +74,7 @@ gulp.task('pug', function buildHTML() {
       pretty: true
     }))
     .pipe(gulp.dest('app/'))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('default', function(callback) {

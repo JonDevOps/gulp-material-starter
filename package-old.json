@@ -1,24 +1,24 @@
 {
   "name": "gulp-material-starter",
   "version": "1.0.0",
-  "description": "Boilerplate to help you get started with a static site using gulp and material design",
-  "main": "gulpfile.js",
+  "description": "Rafael Rodriguez's Personal site",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm install"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rafase282/gulp-materialize-starter.git"
+    "url": "git+https://github.com/Rafase282/rafase282.github.io.git"
   },
   "keywords": [
-    "material",
-    "gulp",
-    "Rafase282"
+    "\"R282",
+    "portfolio\""
   ],
-  "author": "Rafael (Rafase282)",
+  "author": "Rafael (Rafase282) Rodriguez",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Rafase282/gulp-materialize-starter/issues"
+    "url": "https://github.com/Rafase282/rafase282.github.io/issues"
   },
   "homepage": "https://github.com/Rafase282/rafase282.github.io#readme",
   "dependencies": {

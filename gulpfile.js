@@ -64,7 +64,7 @@ gulp.task('clean:dist', function() {
 });
 
 gulp.task('clean:app', function() {
-  return del.sync(['!app/css/main.css', 'app/index.html', '!app/js/bundle.js']);
+  return del.sync(['app/css/main.css', 'app/index.html', 'app/js/bundle.js', 'dist']);
 });
 
 gulp.task('pug', function buildHTML() {

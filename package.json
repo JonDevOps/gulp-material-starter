@@ -22,8 +22,6 @@
   },
   "homepage": "https://github.com/Rafase282/rafase282.github.io#readme",
   "dependencies": {
-    "materialize-css": "^0.97.6",
-    "mdi": "^1.6.50",
     "pug": "^2.0.0-alpha8"
   },
   "devDependencies": {

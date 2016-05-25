@@ -74,7 +74,7 @@ gulp.task('pug', function buildHTML() {
       pretty: true
     }))
     .pipe(gulp.dest('app/'))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.reload({ stream: true }))
 });
 
 gulp.task('default', function(callback) {

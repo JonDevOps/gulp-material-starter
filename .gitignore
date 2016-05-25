@@ -30,3 +30,4 @@ node_modules
 .env
 .idea
 *.db
+app/*.html

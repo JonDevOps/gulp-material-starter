@@ -1,0 +1,25 @@
+section.container.scrollspy#contact
+  h2 Contact Me
+  p
+    | If you would like to get in touch for consulting, job, comments, feedback or anything that you feel like telling me, go ahead and write me. I do reply back.
+  .container
+    .row
+      form.col.s12(action='https://formspree.io/rafase282@gmail.com', method='POST')
+        .row
+          .input-field.col.s6
+            i.material-icons.prefix account_circle
+            input#icon_prefix.validate(type='text', name='name')
+            label(for='icon_prefix') First Name
+          .input-field.col.s6
+            i.material-icons.prefix mail
+            input#icon_email.validate(type='email', name='_replyto')
+            label(for='icon_email') E-Mail
+        .row    
+          .input-field.col.s12
+            i.material-icons.prefix.active mode_edit
+            textarea.materialize-textarea(length='282', name='message', style='height: 21.6px;')
+            label.active(for='textarea1') Message
+            span.character-counter(style='float: right; font-size: 12px; height: 1px;')
+            input(type='hidden', name='_next', value='//rafase282.github.io/thanks.html')
+            input(type='text', name='_gotcha', style='display:none')
+            input.btn(type='submit', name='action', value='SUBMIT')

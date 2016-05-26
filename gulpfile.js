@@ -33,6 +33,7 @@ gulp.task('sass', function() {
 gulp.task('watch', function() {
   gulp.watch('app/sass/**/*.sass', ['sass']);
   gulp.watch('app/views/**/*.pug', ['pug']);
+  gulp.watch('app/js/index.js', ['lint']);
   gulp.watch('app/js/**/*.js', browserSync.reload);
   gulp.watch('app/*.html', browserSync.reload);
 });
@@ -74,7 +75,9 @@ gulp.task('pug', function buildHTML() {
       pretty: true
     }))
     .pipe(gulp.dest('app/'))
-    .pipe(browserSync.reload({ stream: true }))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
 });
 
 gulp.task('default', function(callback) {
@@ -85,4 +88,11 @@ gulp.task('default', function(callback) {
 
 gulp.task('build', function(callback) {
   runSequence('clean:dist', ['sass', 'pug', 'useref', 'imagemin', 'fonts'], callback);
+});
+
+gulp.task('lint', function() {
+  return gulp.src('app/js/index.js')
+    // Load a specific ESLint config
+    .pipe(eslint('.eslintrc.js'))
+    .pipe(eslint.format());
 });

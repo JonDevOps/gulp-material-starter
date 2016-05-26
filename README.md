@@ -20,6 +20,7 @@ This was built from [animsaj](https://github.com/animsaj/gulp-materialize-starte
 - Images
 - [Devicons](https://vorillaz.github.io/devicons/#/main)
 - [Font Awesome](http://fontawesome.io/)
+- [InstantClick](http://instantclick.io/)
 
 ## Remote Resources:
 

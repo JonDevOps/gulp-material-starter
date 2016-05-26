@@ -21,6 +21,7 @@ This was built from [animsaj](https://github.com/animsaj/gulp-materialize-starte
 - [Devicons](https://vorillaz.github.io/devicons/#/main)
 - [Font Awesome](http://fontawesome.io/)
 - [InstantClick](http://instantclick.io/)
+- [Prefixfree](https://leaverou.github.io/prefixfree/)
 
 ## Remote Resources:
 

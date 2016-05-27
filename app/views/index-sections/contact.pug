@@ -1,25 +1,26 @@
 section.container.scrollspy#contact
-  h2 Contact Me
-  p
-    | If you would like to get in touch for consulting, job, comments, feedback or anything that you feel like telling me, go ahead and write me. I do reply back.
+  h2.color-Tp Contact Me
   .container
-    .row
-      form.col.s12(action='https://formspree.io/rafase282@gmail.com', method='POST')
-        .row
-          .input-field.col.s6
-            i.material-icons.prefix account_circle
-            input#icon_prefix.validate(type='text', name='name')
-            label.left-align(for='icon_prefix') First Name
-          .input-field.col.s6
-            i.material-icons.prefix mail
-            input#icon_email.validate(type='email', name='_replyto')
-            label.left-align(for='icon_email') E-Mail
-        .row    
-          .input-field.col.s12
-            i.material-icons.prefix mode_edit
-            textarea.materialize-textarea.validate#textarea1(length='282', name='message', style='height: 21.6px;')
-            label.left-align(for='textarea1') Message
-            span.character-counter(style='float: right; font-size: 12px; height: 1px;')
-            input(type='hidden', name='_next', value='./thanks.html')
-            input(type='text', name='_gotcha', style='display:none')
-            input.btn.color-Bp#send(type='submit', name='action', value='Send')
+    p.color-Tp-light
+      | If you would like to get in touch for consulting, job, comments, feedback or anything that you feel like telling me, go ahead and write me. I do reply back.
+  .container
+    .card-panel.hoverable
+      .row
+        form.col.s12(action='https://formspree.io/rafase282@gmail.com', method='POST')
+          .row
+            .input-field.col.s6
+              i.material-icons.prefix.color-Tp-light account_circle
+              input#icon_prefix.validate(type='text', name='name', length='28')
+              label.left-align(for='icon_prefix') Full Name
+            .input-field.col.s6
+              i.material-icons.prefix.color-Tp-light mail
+              input#icon_email.validate(type='email', name='_replyto', length='28')
+              label.left-align(for='icon_email') E-Mail
+          .row    
+            .input-field.col.s12
+              i.material-icons.prefix.color-Tp-light mode_edit
+              textarea.materialize-textarea#textarea1(length='282', name='message', style='height: 21.6px;')
+              label.left-align(for='textarea1') Message
+              input(type='hidden', name='_next', value='./thanks.html')
+              input(type='text', name='_gotcha', style='display:none')
+              button.btn.color-Bp-light#send(type='submit', name='action') Send

@@ -1,19 +1,39 @@
 section.container.scrollspy#portfolio
-  h2 Projects
-  p
-    | These are a series of projects that I have completed from varying degress of complexity. They are all open sourced ad available online for you to clone or view. I normally use either 
-    a(href="http://codepen.io/Rafase282/", target="_blank") CodePen 
-    | for exclusively front end projects, 
-    a(href="https://github.com/Rafase282", target="_blank") Github Pages 
-    | for frontend projects with multiple pages or 
-    a(href="http://heroku.com", target="_blank") Heroku 
-    | for full stack or API projects.
-  p
-    | Each project will have links to the source code and a live demo along with a screenshot and a brieft description of the project and tools used when you click the image.
+  h2.color-Tp Projects
+  .card-panel.hoverable
+    p.color-Tp-light
+      | These are a series of projects that I have completed from varying degress of complexity. They are all open sourced ad available online for you to clone or view. I normally use either 
+      a(href="http://codepen.io/Rafase282/", target="_blank") CodePen 
+      | for exclusively front end projects, 
+      a(href="https://github.com/Rafase282", target="_blank") Github Pages 
+      | for frontend projects with multiple pages or 
+      a(href="http://heroku.com", target="_blank") Heroku 
+      | for full stack or API projects.
+    p.color-Tp-light
+      | Each project will have links to the source code and a live demo along with a screenshot and a brieft description of the project and tools used when you click the image.
 
   .row
     .col.s12.m6.l4
-      .card
+      .card.hoverable
+        .card-image.waves-effect.waves-block.waves-light
+          img.activator(src='http://materializecss.com/images/office.jpg')
+        .card-content
+          span.card-title.activator.color-Tp-light
+            | Project Name
+            i.material-icons.right more_vert
+        .card-action
+          a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
+            i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+          a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
+            i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+        .card-reveal
+          span.card-title.color-Tp
+            | Project Name
+            i.material-icons.right close
+          p.color-Tp-light
+            | Here is some more information about this product that is only revealed once clicked on.
+    .col.s12.m6.l4
+      .card.hoverable
         .card-image.waves-effect.waves-block.waves-light
           img.activator(src='http://materializecss.com/images/office.jpg')
         .card-content
@@ -22,9 +42,9 @@ section.container.scrollspy#portfolio
             i.material-icons.right more_vert
         .card-action
           a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-            i.material-icons.left.tooltipped(data-position='top', data-tooltip='Live Demo') web
+            i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
           a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-            i.mdi.mdi-github-circle.right.small.tooltipped(data-position='top', data-tooltip='Source Code')
+            i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
         .card-reveal
           span.card-title.grey-text.text-darken-4
             | Project Name
@@ -32,7 +52,7 @@ section.container.scrollspy#portfolio
           p
             | Here is some more information about this product that is only revealed once clicked on.
     .col.s12.m6.l4
-      .card
+      .card.hoverable
         .card-image.waves-effect.waves-block.waves-light
           img.activator(src='http://materializecss.com/images/office.jpg')
         .card-content
@@ -41,9 +61,9 @@ section.container.scrollspy#portfolio
             i.material-icons.right more_vert
         .card-action
           a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-            i.material-icons.left.tooltipped(data-position='top', data-tooltip='Live Demo') web
+            i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
           a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-            i.mdi.mdi-github-circle.right.small.tooltipped(data-position='top', data-tooltip='Source Code')
+            i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
         .card-reveal
           span.card-title.grey-text.text-darken-4
             | Project Name
@@ -51,7 +71,7 @@ section.container.scrollspy#portfolio
           p
             | Here is some more information about this product that is only revealed once clicked on.
     .col.s12.m6.l4
-      .card
+      .card.hoverable
         .card-image.waves-effect.waves-block.waves-light
           img.activator(src='http://materializecss.com/images/office.jpg')
         .card-content
@@ -60,9 +80,9 @@ section.container.scrollspy#portfolio
             i.material-icons.right more_vert
         .card-action
           a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-            i.material-icons.left.tooltipped(data-position='top', data-tooltip='Live Demo') web
+            i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
           a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-            i.mdi.mdi-github-circle.right.small.tooltipped(data-position='top', data-tooltip='Source Code')
+            i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
         .card-reveal
           span.card-title.grey-text.text-darken-4
             | Project Name
@@ -70,7 +90,7 @@ section.container.scrollspy#portfolio
           p
             | Here is some more information about this product that is only revealed once clicked on.
     .col.s12.m6.l4
-      .card
+      .card.hoverable
         .card-image.waves-effect.waves-block.waves-light
           img.activator(src='http://materializecss.com/images/office.jpg')
         .card-content
@@ -79,9 +99,9 @@ section.container.scrollspy#portfolio
             i.material-icons.right more_vert
         .card-action
           a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-            i.material-icons.left.tooltipped(data-position='top', data-tooltip='Live Demo') web
+            i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
           a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-            i.mdi.mdi-github-circle.right.small.tooltipped(data-position='top', data-tooltip='Source Code')
+            i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
         .card-reveal
           span.card-title.grey-text.text-darken-4
             | Project Name
@@ -89,7 +109,7 @@ section.container.scrollspy#portfolio
           p
             | Here is some more information about this product that is only revealed once clicked on.
     .col.s12.m6.l4
-      .card
+      .card.hoverable
         .card-image.waves-effect.waves-block.waves-light
           img.activator(src='http://materializecss.com/images/office.jpg')
         .card-content
@@ -98,9 +118,9 @@ section.container.scrollspy#portfolio
             i.material-icons.right more_vert
         .card-action
           a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-            i.material-icons.left.tooltipped(data-position='top', data-tooltip='Live Demo') web
+            i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
           a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-            i.mdi.mdi-github-circle.right.small.tooltipped(data-position='top', data-tooltip='Source Code')
+            i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
         .card-reveal
           span.card-title.grey-text.text-darken-4
             | Project Name
@@ -108,7 +128,7 @@ section.container.scrollspy#portfolio
           p
             | Here is some more information about this product that is only revealed once clicked on.
     .col.s12.m6.l4
-      .card
+      .card.hoverable
         .card-image.waves-effect.waves-block.waves-light
           img.activator(src='http://materializecss.com/images/office.jpg')
         .card-content
@@ -117,9 +137,9 @@ section.container.scrollspy#portfolio
             i.material-icons.right more_vert
         .card-action
           a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-            i.material-icons.left.tooltipped(data-position='top', data-tooltip='Live Demo') web
+            i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
           a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-            i.mdi.mdi-github-circle.right.small.tooltipped(data-position='top', data-tooltip='Source Code')
+            i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
         .card-reveal
           span.card-title.grey-text.text-darken-4
             | Project Name
@@ -127,7 +147,7 @@ section.container.scrollspy#portfolio
           p
             | Here is some more information about this product that is only revealed once clicked on.
     .col.s12.m6.l4
-      .card
+      .card.hoverable
         .card-image.waves-effect.waves-block.waves-light
           img.activator(src='http://materializecss.com/images/office.jpg')
         .card-content
@@ -136,9 +156,9 @@ section.container.scrollspy#portfolio
             i.material-icons.right more_vert
         .card-action
           a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-            i.material-icons.left.tooltipped(data-position='top', data-tooltip='Live Demo') web
+            i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
           a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-            i.mdi.mdi-github-circle.right.small.tooltipped(data-position='top', data-tooltip='Source Code')
+            i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
         .card-reveal
           span.card-title.grey-text.text-darken-4
             | Project Name
@@ -146,7 +166,7 @@ section.container.scrollspy#portfolio
           p
             | Here is some more information about this product that is only revealed once clicked on.
     .col.s12.m6.l4
-      .card
+      .card.hoverable
         .card-image.waves-effect.waves-block.waves-light
           img.activator(src='http://materializecss.com/images/office.jpg')
         .card-content
@@ -155,9 +175,9 @@ section.container.scrollspy#portfolio
             i.material-icons.right more_vert
         .card-action
           a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-            i.material-icons.left.tooltipped(data-position='top', data-tooltip='Live Demo') web
+            i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
           a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-            i.mdi.mdi-github-circle.right.small.tooltipped(data-position='top', data-tooltip='Source Code')
+            i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
         .card-reveal
           span.card-title.grey-text.text-darken-4
             | Project Name
@@ -165,7 +185,7 @@ section.container.scrollspy#portfolio
           p
             | Here is some more information about this product that is only revealed once clicked on.
     .col.s12.m6.l4
-      .card
+      .card.hoverable
         .card-image.waves-effect.waves-block.waves-light
           img.activator(src='http://materializecss.com/images/office.jpg')
         .card-content
@@ -174,9 +194,9 @@ section.container.scrollspy#portfolio
             i.material-icons.right more_vert
         .card-action
           a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-            i.material-icons.left.tooltipped(data-position='top', data-tooltip='Live Demo') web
+            i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
           a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-            i.mdi.mdi-github-circle.right.small.tooltipped(data-position='top', data-tooltip='Source Code')
+            i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
         .card-reveal
           span.card-title.grey-text.text-darken-4
             | Project Name
@@ -184,7 +204,7 @@ section.container.scrollspy#portfolio
           p
             | Here is some more information about this product that is only revealed once clicked on.
     .col.s12.m6.l4
-      .card
+      .card.hoverable
         .card-image.waves-effect.waves-block.waves-light
           img.activator(src='http://materializecss.com/images/office.jpg')
         .card-content
@@ -193,9 +213,9 @@ section.container.scrollspy#portfolio
             i.material-icons.right more_vert
         .card-action
           a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-            i.material-icons.left.tooltipped(data-position='top', data-tooltip='Live Demo') web
+            i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
           a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-            i.mdi.mdi-github-circle.right.small.tooltipped(data-position='top', data-tooltip='Source Code')
+            i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
         .card-reveal
           span.card-title.grey-text.text-darken-4
             | Project Name
@@ -203,7 +223,7 @@ section.container.scrollspy#portfolio
           p
             | Here is some more information about this product that is only revealed once clicked on.
     .col.s12.m6.l4
-      .card
+      .card.hoverable
         .card-image.waves-effect.waves-block.waves-light
           img.activator(src='http://materializecss.com/images/office.jpg')
         .card-content
@@ -212,28 +232,9 @@ section.container.scrollspy#portfolio
             i.material-icons.right more_vert
         .card-action
           a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-            i.material-icons.left.tooltipped(data-position='top', data-tooltip='Live Demo') web
+            i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
           a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-            i.mdi.mdi-github-circle.right.small.tooltipped(data-position='top', data-tooltip='Source Code')
-        .card-reveal
-          span.card-title.grey-text.text-darken-4
-            | Project Name
-            i.material-icons.right close
-          p
-            | Here is some more information about this product that is only revealed once clicked on.
-    .col.s12.m6.l4
-      .card
-        .card-image.waves-effect.waves-block.waves-light
-          img.activator(src='http://materializecss.com/images/office.jpg')
-        .card-content
-          span.card-title.activator.grey-text.text-darken-4
-            | Project Name
-            i.material-icons.right more_vert
-        .card-action
-          a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-            i.material-icons.left.tooltipped(data-position='top', data-tooltip='Live Demo') web
-          a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-            i.mdi.mdi-github-circle.right.small.tooltipped(data-position='top', data-tooltip='Source Code')
+            i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
         .card-reveal
           span.card-title.grey-text.text-darken-4
             | Project Name

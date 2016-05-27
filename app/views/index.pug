@@ -3,11 +3,13 @@ block content
   include ./index-sections/header.pug
   main.center-align
     section.container.scrollspy#home
-      img.responsive-img.materialboxed#logo(src='images/my-pc.jpg', alt='Web Developer')
-      p.flow-text
-        | My name is Rafael Rodriguez. I'm a Computer Scientist (B.Sc), passionate about Web Development and Open Source Software. When I'm not mentoring others at 
-        a(href="https://freecodecamp.com", target="_blank") Free Code Camp, 
-        | you'll see me around New York with my son.
+      h1.color-Tp Welcome!
+      .card-panel.hoverable
+        img.responsive-img.materialboxed.hoverable#logo(src='images/my-pc.jpg', alt='Web Developer')
+        p.color-Tp-light.flow-text
+          | My name is Rafael Rodriguez. I'm a Computer Scientist (B.Sc), passionate about Web Development and Open Source Software. When I'm not mentoring others at 
+          a(href="https://freecodecamp.com", target="_blank") Free Code Camp, 
+          | you'll see me around New York with my son.
     include ./index-sections/tools.pug
     include ./index-sections/portfolio.pug
     include ./index-sections/contact.pug

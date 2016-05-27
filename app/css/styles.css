@@ -1,24 +1,24 @@
 .color-Bp,
 .color-Bp:hover,
 .color-Bp:active {
-  background-color: #01579b; }
+  background-color: #01579b !important; }
 
 .color-Bp-light,
 .color-Bp-light:hover,
 .color-Bp-light:active {
-  background-color: #1e88e5; }
+  background-color: #1e88e5 !important; }
 
 .color-Tp {
-  color: #01579b; }
+  color: #01579b !important; }
 
 .color-Ts {
-  color: #fff; }
+  color: #fff !important; }
 
 .color-Ts-dark {
-  color: #bdbdbd; }
+  color: #bdbdbd !important; }
 
 .color-Tp-light {
-  color: #1e88e5; }
+  color: #1e88e5 !important; }
 
 body {
   display: flex;
@@ -41,4 +41,4 @@ section {
   font-size: 4em; }
 
 .nav-wrapper ul li .active, .nav-wrapper ul li a:hover {
-  background: #1e88e5; }
+  background: #1e88e5 !important; }

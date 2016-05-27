@@ -31,5 +31,5 @@ node_modules
 .idea
 *.db
 app/*.html
-app/css/main.css
+app/css/styles.css
 dist

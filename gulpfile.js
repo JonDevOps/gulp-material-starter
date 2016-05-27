@@ -25,9 +25,6 @@ gulp.task('sass', function() {
   return gulp.src('app/sass/**/*.sass') //Source all files ending with.scss in scss directory and its subdirectories
     .pipe(sass())
     .pipe(gulp.dest('app/css'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
 });
 
 gulp.task('watch', function() {
@@ -36,6 +33,7 @@ gulp.task('watch', function() {
   gulp.watch('app/js/index.js', ['lint']);
   gulp.watch('app/js/**/*.js', browserSync.reload);
   gulp.watch('app/*.html', browserSync.reload);
+  gulp.watch('app/css/*.css', browserSync.reload);
 });
 
 gulp.task('useref', function() {

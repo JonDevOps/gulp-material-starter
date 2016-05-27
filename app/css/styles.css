@@ -41,3 +41,6 @@ section {
 
 #send {
   width: auto; }
+
+.nav-wrapper ul li .active, .nav-wrapper ul li a:hover {
+  background: #1e88e5; }

@@ -29,7 +29,8 @@ main {
   flex: 1 0 auto; }
 
 section {
-  padding-top: 5%; }
+  padding-top: 5%;
+  padding-bottom: 5%; }
 
 #logo {
   width: 50%;
@@ -38,9 +39,6 @@ section {
 
 .devicons {
   font-size: 4em; }
-
-#send {
-  width: auto; }
 
 .nav-wrapper ul li .active, .nav-wrapper ul li a:hover {
   background: #1e88e5; }

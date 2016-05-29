@@ -7,7 +7,7 @@ block content
   main.center-align
     section.container.scrollspy#home
       h2.color-Tp Projects
-      .card-panel.hoverable
+      .card-panel
         p.color-Tp-light
           | These are a series of projects that I have completed from varying degress of complexity. They are all open sourced ad available online for you to clone or view. I normally use either 
           a(href="http://codepen.io/Rafase282/", target="_blank") CodePen 
@@ -19,466 +19,485 @@ block content
         p.color-Tp-light
           | Each project will have links to the source code and a live demo along with a screenshot and a brieft description of the project and tools used when you click the image.
 
-      .row
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='images/manga.png')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp MangaDB
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='https://manga-client.herokuapp.com', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Site') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282/Mangadb', target='_blank')
-                i.mdi.mdi-github-circle.center.small.color-Tp.tooltipped(data-position='top', data-tooltip='API Source Code')
-              a.waves-effect.waves-light(href='https://github.com/Rafase282/mangadb-front', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Client Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp MangaDB
-                i.material-icons.right close
-              p.color-Tp-light
-                | This project is divided in two parts, standalone API which handles the data, security, user management and more; and the client which displays the data in a user friendly way.
-              p.color-Tp-light
-                | The Client is based on the Material design and is fully responsive. The user can create or delete an account, and create as many new series as wanted, there is quick access to increase the last read chapter by 1 or update multiple information at once.
-                br
-                br
-                | The user can also edit his information and is able to preview the thumbnails before saving it and much more.
-              h5.color-Tp Tools used:
-              ul.color-Tp-light
-                li Node.js (API & Client)
-                li Express (API & Client)
-                li Pug (Client)
-                li MongoDB (API)
-                li Javascript (API & Client)
-                li Sass (Client)
-                li Gulp (Client)
-                li Travis-CI (API)
-                li Jason Web Tokens (API & Client)
+        h3.color-Tp Full Stack Projects
+        .row
+          .col.l12
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='images/manga.png')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp MangaDB
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='https://manga-client.herokuapp.com', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Site') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282/Mangadb', target='_blank')
+                  i.mdi.mdi-github-circle.center.small.color-Tp.tooltipped(data-position='top', data-tooltip='API Source Code')
+                a.waves-effect.waves-light(href='https://github.com/Rafase282/mangadb-front', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Client Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp MangaDB
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | This project is divided in two parts, standalone API which handles the data, security, user management and more; and the client which displays the data in a user friendly way.
+                p.color-Tp-light
+                  | The Client is based on the Material design and is fully responsive. The user can create or delete an account, and create as many new series as wanted, there is quick access to increase the last read chapter by 1 or update multiple information at once.
+                  br
+                  br
+                  | The user can also edit his information and is able to preview the thumbnails before saving it and much more.
+                h5.color-Tp Tools used:
+                ul.color-Tp-light
+                  li Node.js (API & Client)
+                  li Express (API & Client)
+                  li Pug (Client)
+                  li MongoDB (API)
+                  li Javascript (API & Client)
+                  li Sass (Client)
+                  li Gulp (Client)
+                  li Travis-CI (API)
+                  li Jason Web Tokens (API & Client)
+        h3.color-Tp React Projects
+        .row
+          .col.s12.m6.l4
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='images/recipe.png')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp React Recipe Box
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='https://rafase282.github.io/React-Recipe-Box/', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282/React-Recipe-Box', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp React Recipe Box
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | This is a simple React based recipe web app that saves your recipes to local storage in your browser. It supports markdwon so you can be as creative as you want with your recipes. You also have the avility to delete any and all recipes besides adding new ones.
+                h5.color-Tp Tools used:
+                ul.color-Tp-light
+                  li Reactjs
+                  li Babel
+                  li Materializecss
+                  li Browser Local Storage)
+                  li Javascript
+                  li Sass
+                  li Markdown
 
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='images/recipe.png')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp React Recipe Box
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='https://rafase282.github.io/React-Recipe-Box/', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282/React-Recipe-Box', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp React Recipe Box
-                i.material-icons.right close
-              p.color-Tp-light
-                | This is a simple React based recipe web app that saves your recipes to local storage in your browser. It supports markdwon so you can be as creative as you want with your recipes. You also have the avility to delete any and all recipes besides adding new ones.
-              h5.color-Tp Tools used:
-              ul.color-Tp-light
-                li Reactjs
-                li Babel
-                li Materializecss
-                li Browser Local Storage)
-                li Javascript
-                li Sass
-                li Markdown
+          .col.s12.m6.l4
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='images/markdown.png')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp React: Markdown Previewer
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='https://rafase282.github.io/React-MarkDown-Editor/', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282/React-MarkDown-Editor', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp React: Markdown Previewer
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | This is a simple React based markdwon parser that allows users to quickly preview markdown. Simple and useful for those who are new to markdown syntax and need a visual feedback.
+                h5.color-Tp Tools used:
+                ul.color-Tp-light
+                  li Reactjs
+                  li Babel
+                  li Javascript
+                  li Sass
+                  li Markdown
 
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='images/markdown.png')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp React: Markdown Previewer
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='https://rafase282.github.io/React-MarkDown-Editor/', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282/React-MarkDown-Editor', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp React: Markdown Previewer
-                i.material-icons.right close
-              p.color-Tp-light
-                | This is a simple React based markdwon parser that allows users to quickly preview markdown. Simple and useful for those who are new to markdown syntax and need a visual feedback.
-              h5.color-Tp Tools used:
-              ul.color-Tp-light
-                li Reactjs
-                li Babel
-                li Javascript
-                li Sass
-                li Markdown
+          .col.s12.m12.l4
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='images/leaderboard.png')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp React: Free Code Camp Leaderboard
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='https://rafase282.github.io/React-FCC-Camper-Leaderboard/', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282/React-FCC-Camper-Leaderboard', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp React: Free Code Camp Leaderboard
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | A react based leaderboard that receives the data via JSON API and lets the user organize by the total points in a month or all-time. Clicking the username will take you to the user's profile.
+                h5.color-Tp Tools used:
+                ul.color-Tp-light
+                  li React
+                  li SASS
+                  li Javascript
+                  li jQUery
+                  li Babel
 
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='images/bar-chart.png')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp D3: Bar Chart
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='https://rafase282.github.io/D3-BarChart/', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282/D3-BarChart/', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp D3: Bar Chart
-                i.material-icons.right close
-              p.color-Tp-light
-                | Responsive bar chart made using d3.js. It has a simple interface and tootips to show the grapth details. D3 is used for data visualization.
-              h5.color-Tp Tools used:
-              ul.color-Tp-light
-                li D3.js
-                li CSS
-                li Javascript
-                li SVG
-                li Ajax
+        h3.color-Tp Data Visualization Projects
+        .row
+          .col.l12
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='images/bar-chart.png')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp D3: Bar Chart
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='https://rafase282.github.io/D3-BarChart/', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282/D3-BarChart/', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp D3: Bar Chart
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | Responsive bar chart made using d3.js. It has a simple interface and tootips to show the grapth details. D3 is used for data visualization.
+                h5.color-Tp Tools used:
+                ul.color-Tp-light
+                  li D3.js
+                  li CSS
+                  li Javascript
+                  li SVG
+                  li Ajax
 
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='images/leaderboard.png')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp React: Free Code Camp Leaderboard
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='https://rafase282.github.io/React-FCC-Camper-Leaderboard/', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282/React-FCC-Camper-Leaderboard', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp React: Free Code Camp Leaderboard
-                i.material-icons.right close
-              p.color-Tp-light
-                | A react based leaderboard that receives the data via JSON API and lets the user organize by the total points in a month or all-time. Clicking the username will take you to the user's profile.
-              h5.color-Tp Tools used:
-              ul.color-Tp-light
-                li React
-                li SASS
-                li Javascript
-                li jQUery
-                li Babel
+        h3.color-Tp Back End Projects
+        .row
+          .col.s12.m6
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='images/timestamp.png')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp Timestamp Microservice API
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='http://r282-timestamp-api.herokuapp.com/', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282/Timestamp-API', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp Timestamp Microservice API
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | This is a microservice that will allow get calls to convert Unix time-stamps or natural dates to one or the other. It checks the date given for validity and output either null or a predefined date format.
+                h5.color-Tp Tools used:
+                ul.color-Tp-light
+                  li Javascript
+                  li Nodejs
+                  li Expressjs
+                  li JSON
+                  li Momentjs
+                  li Pug
 
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='images/simon.png')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp Simon Says Game
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='https://rafase282.github.io/Simon/', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282/Simon', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp Simon Says Game
-                i.material-icons.right close
-              p.color-Tp-light
-                | A implementation of the popular Simon Says game where the user can play in two mondes, strict mode which does not allow for reties, and normal mode which allows for unlimited retries.
-              p.color-Tp-light
-                | There is a power button that must be used, just as if it was a physical game, and there is sound feeedback besides the colouring. The speed increases after the 5th,9th and 13th round. The player wins after the 20th round.
-              h5.color-Tp Tools used:
-              ul.color-Tp-light
-                li HTML5
-                li SASS
-                li Javascript
-                li Pug
-                li Boostrap3
-                li jQuery2
+          .col.s12.m6
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='images/header.png')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp Header Parser Microservice API
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='https://header-parser.herokuapp.com/', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282/header-parser', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp Header Parser Microservice API
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | It is an API that works similar to "whoami" as it displays the real ip, language and software version from the client side.
+                h5.color-Tp Tools used:
+                ul.color-Tp-light
+                  li Javascript
+                  li Nodejs
+                  li Expressjs
+                  li JSON
+                  li HTML5
+        h3.color-Tp Front End Projects
+        .row
+          .col.s12.m6.l4
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='images/simon.png')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp Simon Says Game
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='https://rafase282.github.io/Simon/', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282/Simon', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp Simon Says Game
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | A implementation of the popular Simon Says game where the user can play in two mondes, strict mode which does not allow for reties, and normal mode which allows for unlimited retries.
+                p.color-Tp-light
+                  | There is a power button that must be used, just as if it was a physical game, and there is sound feeedback besides the colouring. The speed increases after the 5th,9th and 13th round. The player wins after the 20th round.
+                h5.color-Tp Tools used:
+                ul.color-Tp-light
+                  li HTML5
+                  li SASS
+                  li Javascript
+                  li Pug
+                  li Boostrap3
+                  li jQuery2
 
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='images/wiki.png')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp Wikipedia Searcher
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='https://rafase282.github.io/Wiki-Viwer/', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282/Wiki-Viwer', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp Wikipedia Searcher
-                i.material-icons.right close
-              p.color-Tp-light
-                | Simple interface to the Wikipedia API that allows to search articles and display 10 possible article snippets for the user to select one. The snippets have an extract of the article, a title and when clicked, it will take you to the article.
-              p.color-Tp-light
-                | The app also has a randome button for opening a random wikipedia article. The app can easily be adjusted to any MediaWiki installation.
-              h5.color-Tp Tools used:
-              ul.color-Tp-light
-                li HTML5
-                li CSS3
-                li Wikipedia API
-                li Javascript
-                li Boostrap3
-                li jQuery2
+          .col.s12.m6.l4
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='images/wiki.png')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp Wikipedia Searcher
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='https://rafase282.github.io/Wiki-Viwer/', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282/Wiki-Viwer', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp Wikipedia Searcher
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | Simple interface to the Wikipedia API that allows to search articles and display 10 possible article snippets for the user to select one. The snippets have an extract of the article, a title and when clicked, it will take you to the article.
+                p.color-Tp-light
+                  | The app also has a randome button for opening a random wikipedia article. The app can easily be adjusted to any MediaWiki installation.
+                h5.color-Tp Tools used:
+                ul.color-Tp-light
+                  li HTML5
+                  li CSS3
+                  li Wikipedia API
+                  li Javascript
+                  li Boostrap3
+                  li jQuery2
 
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='images/twitchtv.png')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp Twitchtv JSON API
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='https://rafase282.github.io/Twitchtv-JSON-API', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282/Twitchtv-JSON-API', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp Twitchtv JSON API
-                i.material-icons.right close
-              p.color-Tp-light
-                | This app will use the Twitch TV JSON API and display a list of accounts, if they are closed it will display the right symbols and mention that the account has been closed, the same for offline and online streams. 
-              p.color-Tp-light
-                | It will also display online and offline streams on a different tab and has a global search function that display results as you type while hiding anything that is not part of the match using regular expressions.
-              h5.color-Tp Tools used:
-              ul.color-Tp-light
-                li HTML5
-                li CSS3
-                li Twitchtv API
-                li Javascript
-                li Boostrap3
-                li jQuery2
-                li Font Awesome
+          .col.s12.m6.l4
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='images/twitchtv.png')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp Twitchtv JSON API
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='https://rafase282.github.io/Twitchtv-JSON-API', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282/Twitchtv-JSON-API', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp Twitchtv JSON API
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | This app will use the Twitch TV JSON API and display a list of accounts, if they are closed it will display the right symbols and mention that the account has been closed, the same for offline and online streams. 
+                p.color-Tp-light
+                  | It will also display online and offline streams on a different tab and has a global search function that display results as you type while hiding anything that is not part of the match using regular expressions.
+                h5.color-Tp Tools used:
+                ul.color-Tp-light
+                  li HTML5
+                  li CSS3
+                  li Twitchtv API
+                  li Javascript
+                  li Boostrap3
+                  li jQuery2
+                  li Font Awesome
 
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='images/timestamp.png')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp Timestamp Microservice API
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='http://r282-timestamp-api.herokuapp.com/', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282/Timestamp-API', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp Timestamp Microservice API
-                i.material-icons.right close
-              p.color-Tp-light
-                | This is a microservice that will allow get calls to convert Unix time-stamps or natural dates to one or the other. It checks the date given for validity and output either null or a predefined date format.
-              h5.color-Tp Tools used:
-              ul.color-Tp-light
-                li Javascript
-                li Nodejs
-                li Expressjs
-                li JSON
-                li Momentjs
-                li Pug
-
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='images/header.png')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp Header Parser Microservice API
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='https://header-parser.herokuapp.com/', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282/header-parser', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp Header Parser Microservice API
-                i.material-icons.right close
-              p.color-Tp-light
-                | It is an API that works similar to "whoami" as it displays the real ip, language and software version from the client side.
-              h5.color-Tp Tools used:
-              ul.color-Tp-light
-                li Javascript
-                li Nodejs
-                li Expressjs
-                li JSON
-                li HTML5
-
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='images/pomodoro.png')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp Pomodoro Timer
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='http://rafase282.github.io/Pomodoro-TImer', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282/Pomodoro-TImer', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp Pomodoro Timer
-                i.material-icons.right close
-              p.color-Tp-light
-                | This web app is great for productivity, it can sit in any corner of your screen, and there is not even the need to keep it in view. Once you set the amount of time you want to work and how long you want to rest for, then just let it run and it will keep looking until you stop it. You are also able to pause it in case you have to step aside from your work for a brief moment. 
-              p.color-Tp-light
-                | It has a nice progression animation to let you know how much time you have left and the break and work progress animation have different color to help you figure out in which one you should be if needed.
-              h5.color-Tp Tools used:
-              ul.color-Tp-light
-                li HTML5
-                li CSS3
-                li Canvas
-                li Javascript
-                li Boostrap3
-                li jQuery2
-                li Font Awesome
-                li jquery's WaterBubble.js
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='images/weather.png')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp Local Weather
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='http://codepen.io/Rafase282/full/eNqKao/', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282/Local-Weather', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp Local Weather
-                i.material-icons.right close
-              p.color-Tp-light
-                | The site will request location information, then use that information to get the current weather and other basic information using the OpenWeatherMap API.
-              p.color-Tp-light
-                | The user has the option to display the weather and wind speed using the Metric or Imperial system. It also changes background image depending on the current temperature.
-              p
-              strong Note that the API does not support https on a free account which this uses.
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='http://materializecss.com/images/office.jpg')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp Project Name
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp Project Name
-                i.material-icons.right close
-              p.color-Tp-light
-                | Here is some more information about this product that is only revealed once clicked on.
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='http://materializecss.com/images/office.jpg')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp Project Name
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp Project Name
-                i.material-icons.right close
-              p.color-Tp-light
-                | Here is some more information about this product that is only revealed once clicked on.
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='http://materializecss.com/images/office.jpg')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp Project Name
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp Project Name
-                i.material-icons.right close
-              p.color-Tp-light
-                | Here is some more information about this product that is only revealed once clicked on.
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='http://materializecss.com/images/office.jpg')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp Project Name
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp Project Name
-                i.material-icons.right close
-              p.color-Tp-light
-                | Here is some more information about this product that is only revealed once clicked on.
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='http://materializecss.com/images/office.jpg')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp Project Name
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp Project Name
-                i.material-icons.right close
-              p.color-Tp-light
-                | Here is some more information about this product that is only revealed once clicked on.
-        .col.s12.m6.l4
-          .card.hoverable.medium
-            .card-image.waves-effect.waves-block.waves-light
-              img.activator(src='http://materializecss.com/images/office.jpg')
-            .card-content
-              span.card-title.activator.color-Tp-light
-                h5.color-Tp Project Name
-                i.material-icons.right more_vert
-            .card-action
-              a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
-                i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-              a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
-                i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
-            .card-reveal
-              span.card-title.color-Tp
-                h5.color-Tp Project Name
-                i.material-icons.right close
-              p.color-Tp-light
-                | Here is some more information about this product that is only revealed once clicked on.
+          .col.s12.m6
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='images/pomodoro.png')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp Pomodoro Timer
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='http://rafase282.github.io/Pomodoro-TImer', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282/Pomodoro-TImer', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp Pomodoro Timer
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | This web app is great for productivity, it can sit in any corner of your screen, and there is not even the need to keep it in view. Once you set the amount of time you want to work and how long you want to rest for, then just let it run and it will keep looking until you stop it. You are also able to pause it in case you have to step aside from your work for a brief moment. 
+                p.color-Tp-light
+                  | It has a nice progression animation to let you know how much time you have left and the break and work progress animation have different color to help you figure out in which one you should be if needed.
+                h5.color-Tp Tools used:
+                ul.color-Tp-light
+                  li HTML5
+                  li CSS3
+                  li Canvas
+                  li Javascript
+                  li Boostrap3
+                  li jQuery2
+                  li Font Awesome
+                  li jquery's WaterBubble.js
+          .col.s12.l6
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='images/weather.png')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp Local Weather
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='http://codepen.io/Rafase282/full/eNqKao/', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282/Local-Weather', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp Local Weather
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | The site will request location information, then use that information to get the current weather and other basic information using the OpenWeatherMap API.
+                p.color-Tp-light
+                  | The user has the option to display the weather and wind speed using the Metric or Imperial system. It also changes background image depending on the current temperature.
+                p
+                strong Note that the API does not support https on a free account which this uses.
+                h5.color-Tp Tools used:
+                ul.color-Tp-light
+                  li HTML5
+                  li CSS3
+                  li Javascript
+                  li Boostrap3
+                  li jQuery2
+                  li Font Awesome
+                  li OpenWeatherMap API
+                  
+        h3.color-Tp Templates
+        .row
+          .col.s12.m6.l4
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='http://materializecss.com/images/office.jpg')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp Project Name
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp Project Name
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | Here is some more information about this product that is only revealed once clicked on.
+          .col.s12.m6.l4
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='http://materializecss.com/images/office.jpg')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp Project Name
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp Project Name
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | Here is some more information about this product that is only revealed once clicked on.
+          .col.s12.m6.l4
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='http://materializecss.com/images/office.jpg')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp Project Name
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp Project Name
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | Here is some more information about this product that is only revealed once clicked on.
+          .col.s12.m6.l4
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='http://materializecss.com/images/office.jpg')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp Project Name
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp Project Name
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | Here is some more information about this product that is only revealed once clicked on.
+          .col.s12.m6.l4
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='http://materializecss.com/images/office.jpg')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp Project Name
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp Project Name
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | Here is some more information about this product that is only revealed once clicked on.
+          .col.s12.m6.l4
+            .card.hoverable.medium
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='http://materializecss.com/images/office.jpg')
+              .card-content
+                span.card-title.activator.color-Tp-light
+                  h5.color-Tp Project Name
+                  i.material-icons.right more_vert
+              .card-action
+                a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
+                  i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
+                a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
+                  i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
+              .card-reveal
+                span.card-title.color-Tp
+                  h5.color-Tp Project Name
+                  i.material-icons.right close
+                p.color-Tp-light
+                  | Here is some more information about this product that is only revealed once clicked on.

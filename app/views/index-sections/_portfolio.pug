@@ -342,19 +342,25 @@ section.container.scrollspy#portfolio
     .col.s12.m6.l4
       .card.hoverable.medium
         .card-image.waves-effect.waves-block.waves-light
-          img.activator(src='http://materializecss.com/images/office.jpg')
+          img.activator(src='images/weather.png')
         .card-content
           span.card-title.activator.color-Tp-light
-            h5.color-Tp Project Name
+            h5.color-Tp Local Weather
             i.material-icons.right more_vert
         .card-action
-          a.waves-effect.waves-light(href='http://codepen.io/Rafase282', target='_blank')
+          a.waves-effect.waves-light(href='http://codepen.io/Rafase282/full/eNqKao/', target='_blank')
             i.material-icons.left.color-Tp.tooltipped(data-position='top', data-tooltip='Live Demo') web
-          a.waves-effect.waves-light(href='https://github.com/Rafase282', target='_blank')
+          a.waves-effect.waves-light(href='https://github.com/Rafase282/Local-Weather', target='_blank')
             i.mdi.mdi-github-circle.right.small.color-Tp.tooltipped(data-position='top', data-tooltip='Source Code')
         .card-reveal
           span.card-title.color-Tp
-            h5.color-Tp Project Name
+            h5.color-Tp Local Weather
             i.material-icons.right close
           p.color-Tp-light
-            | Here is some more information about this product that is only revealed once clicked on.
+            | The site will request location information, then use that information to get the current weather and other basic information using the OpenWeatherMap API.
+          p.color-Tp-light
+            | The user has the option to display the weather and wind speed using the Metric or Imperial system. It also changes background image depending on the current temperature.
+          p
+          strong Note that the API does not support https on a free account which this uses.
+    h3.color-Tp
+      a(href='projects.html') Click for All Projects

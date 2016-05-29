@@ -68,7 +68,7 @@ gulp.task('clean:app', function() {
 });
 
 gulp.task('pug', function buildHTML() {
-  return gulp.src(['app/views/index.pug', 'app/views/thanks.pug'])
+  return gulp.src(['!app/views/_*.pug', 'app/views/*.pug'])
     .pipe(pug({
       pretty: true
     }))

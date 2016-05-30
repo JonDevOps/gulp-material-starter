@@ -45,7 +45,7 @@ gulp.task('useref', function() {
 });
 
 gulp.task('imagemin', function() {
-  return gulp.src('app/images/*.+(png|jpg|gif|swg)')
+  return gulp.src('app/images/*.+(png|jpg|gif|swg|ico)')
     .pipe(cache(imagemin({
       gif: {
         interlaced: true
@@ -64,7 +64,7 @@ gulp.task('clean:dist', function() {
 });
 
 gulp.task('clean:app', function() {
-  return del.sync(['app/css/main.css', 'app/index.html', 'app/js/bundle.js', 'dist']);
+  return del.sync(['app/css/styles.css', 'app/*.html', 'dist']);
 });
 
 gulp.task('pug', function buildHTML() {
@@ -83,6 +83,10 @@ gulp.task('default', function(callback) {
 
 gulp.task('build', function(callback) {
   runSequence('clean:dist', ['sass', 'pug', 'useref', 'imagemin', 'fonts'], callback);
+});
+
+gulp.task('clean', function(callback) {
+  runSequence('clean:dist', 'clean:app', callback);
 });
 
 gulp.task('lint', function() {

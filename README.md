@@ -40,7 +40,7 @@ On the gulp side there are utilities listed bellow
 - cache minified images
 - send all above into a dist folder + copy fonts
 - clean unused files
-- ESLint javascript code
+- ESLint JavaScript code
 
 ## How to use:
 

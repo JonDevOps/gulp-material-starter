@@ -1,15 +1,16 @@
 extends _layout
 block content
+  .navbar-fixed
+    nav
+      .nav-wrapper.color-Bsd
+        a.color-Tp.brand-logo.center(href='/') Rafael Rodriguez
   main.center-align
-    .navbar-fixed
-      nav
-        .nav-wrapper.color-Bp
-          a.brand-logo.center(href='/') Rafael Rodriguez
-    section.container#home
-      h1.color-Tp E-Mail Sent!
-      img.responsive-img#logo(src='images/my-pc.jpg', alt='Web Developer')
+    section#home.color-Bp
+      h1.color-Ts-dark E-Mail Sent!
+      img.materialboxed.responsive-img#logo(src='images/my-pc.jpg', alt='Web Developer')
       .container
-        p.flow-text.color-Tp-light
+        p.color-Ts-dark.flow-text
           | Your message has been sent, I'll reply as soon as I can, meanwhile you can go back to the 
-          a(href='/')
+          a.color-Tp-light(href='/')
             strong main page. 
+    section.empty

@@ -2,10 +2,16 @@
 
 This was built from [animsaj](https://github.com/animsaj/gulp-materialize-starter). I have since then added support for pug, eslint, and added more resources and started customizing it so you will have an usable boilerplate for your portfolio.
 
+To make your own, you will need to edit the content, but the most important part is to use your own email on the form or you won't be able to get the messages from the form.
+
+There is a second page for more projects if you need them,the link is not visible by default.
+
+have fun and enjoy the easter eggs.
+
 ## What you get by default:
 
 - Single Page portfolio
-- Contact form
+- Contact form with empty/incomplete form prevention.
 - Responsive Material design
 - 
 ## Local Resources Included:

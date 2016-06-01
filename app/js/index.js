@@ -17,10 +17,17 @@ ga('create', 'UA-71621485-1', 'auto');
 ga('send', 'pageview');
 
 /* My Code
-*
-*/
+ *
+ */
 $(document).ready(function() {
   $('.button-collapse').sideNav();
   $('.scrollspy').scrollSpy();
-  $('textarea#textarea1').characterCounter();
+  $('textarea#message').characterCounter();
+});
+
+$('#contactForm').submit(function() {
+  if ($.trim($('#name').val()) === '' || $.trim($('#email').val()) === '' || $.trim($('#message').val()) === '') {
+    alert('I dislike empty or incomplete messages.\nAll fields are required.');
+    return false;
+  }
 });

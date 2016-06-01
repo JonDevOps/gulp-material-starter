@@ -6,21 +6,20 @@ section.container.scrollspy#contact
         | If you would like to get in touch for consulting, job, comments, feedback or anything that you feel like telling me, go ahead and write me. I do reply back.
     .container
       .row
-        form.col.s12(action='https://formspree.io/rafase282@gmail.com', method='POST')
+        form.col.s12#contactForm(action='https://formspree.io/rafase282@gmail.com', method='POST')
           .row
             .input-field.col.s6
               i.material-icons.prefix.color-Tp-light account_circle
-              input#icon_prefix.validate(type='text', name='name', length='28')
-              label.left-align(for='icon_prefix') Full Name
+              input#name.validate(type='text', name='name', length='28')
+              label.left-align(for='name') Full Name
             .input-field.col.s6
               i.material-icons.prefix.color-Tp-light mail
-              input#icon_email.validate(type='email', name='_replyto', length='28')
-              label.left-align(for='icon_email') E-Mail
+              input#email.validate(type='email', name='_replyto', length='28')
+              label.left-align(for='email') E-Mail
           .row    
             .input-field.col.s12
               i.material-icons.prefix.color-Tp-light mode_edit
-              textarea.materialize-textarea#textarea1(length='282', name='message', style='height: 21.6px;')
-              label.left-align(for='textarea1') Message
+              textarea.materialize-textarea#message(length='282', name='message', style='height: 21.6px;')
+              label.left-align(for='message') Message
               input(type='hidden', name='_next', value='./thanks')
-              input(type='text', name='_gotcha', style='display:none')
               button.btn.waves-effect.waves-light.color-Bp-light(type='submit', name='action') Send

@@ -37,7 +37,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('useref', function() {
-  return gulp.src('app/*.html') //Source all html files
+  return gulp.src('app/*.+(html|md)') //Source all html files
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify())) //Minifies only if it is js file
     .pipe(gulpIf('*.css', cssnano())) //Minifies only if it is css file 

@@ -37,10 +37,15 @@ gulp.task('watch', function() {
 });
 
 gulp.task('useref', function() {
-  return gulp.src('app/*.+(html|md)') //Source all html files
+  return gulp.src('app/*.html') //Source all html files
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify())) //Minifies only if it is js file
     .pipe(gulpIf('*.css', cssnano())) //Minifies only if it is css file 
+    .pipe(gulp.dest('dist'))
+});
+
+gulp.task('lic', function() {
+  return gulp.src('app/*.md') //Source all license files
     .pipe(gulp.dest('dist'))
 });
 
@@ -82,7 +87,7 @@ gulp.task('default', function(callback) {
 });
 
 gulp.task('build', function(callback) {
-  runSequence('clean:dist', ['sass', 'pug', 'useref', 'imagemin', 'fonts'], callback);
+  runSequence('clean:dist', ['sass', 'pug', 'useref', 'lic', 'imagemin', 'fonts'], callback);
 });
 
 gulp.task('clean', function(callback) {

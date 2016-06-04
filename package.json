@@ -1,6 +1,6 @@
 {
   "name": "gulp-material-starter",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Boilerplate to help you get started with a static site using gulp and material design",
   "main": "gulpfile.js",
   "scripts": {

@@ -50,7 +50,7 @@ gulp.task('lic', function() {
 });
 
 gulp.task('imagemin', function() {
-  return gulp.src('app/images/*.+(png|jpg|gif|swg|ico)')
+  return gulp.src('app/images/*.+(png|jpg|gif|swg|svg|ico)')
     .pipe(cache(imagemin({
       gif: {
         interlaced: true

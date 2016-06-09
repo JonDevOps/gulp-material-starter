@@ -1,9 +1,9 @@
-// build:js js/main.min.js
-script(type='text/javascript', src='js/prefixfree.min.js')
-script(type='text/javascript', src='js/jquery.js')
-script(type='text/javascript', src='js/instantclick.js', data-no-instant)
+// build:js js/main.min.js async
+script(type='text/javascript', async, src='js/prefixfree.min.js')
+script(type='text/javascript', async, src='js/jquery.js')
+script(type='text/javascript', async, src='js/instantclick.js', data-no-instant)
 script(data-no-instant).
   InstantClick.init();
-script(type='text/javascript', src='js/materialize.js')
-script(type='text/javascript', src='js/index.js')
+script(type='text/javascript', async, src='js/materialize.js')
+script(type='text/javascript', async, src='js/index.js')
 // endbuild

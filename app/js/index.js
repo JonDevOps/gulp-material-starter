@@ -23,6 +23,31 @@ $(document).ready(function() {
   $('.button-collapse').sideNav();
   $('.scrollspy').scrollSpy();
   $('textarea#message').characterCounter();
+  // Reveal car content on hover by @sorinr 
+  $('.hover-card').mouseenter(function(e) {
+    $(this).find('.card-reveal').css({
+      display: 'block'
+    }).velocity('stop', false).velocity({
+      translateY: '-100%'
+    }, {
+      duration: 300,
+      queue: false,
+      easing: 'easeInOutQuad'
+    });
+  }).mouseleave(function(e) {
+    $(this).find('.card-reveal').velocity({
+      translateY: 0
+    }, {
+      duration: 225,
+      queue: false,
+      easing: 'easeInOutQuad',
+      complete: function() {
+        $(this).css({
+          display: 'none'
+        });
+      }
+    });
+  });
 });
 
 $('#contactForm').submit(function() {

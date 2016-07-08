@@ -23,8 +23,8 @@ $(document).ready(function() {
   $('.button-collapse').sideNav();
   $('.scrollspy').scrollSpy();
   $('textarea#message').characterCounter();
-  // Reveal car content on hover by @sorinr 
   $('.hover-card').mouseenter(function(e) {
+    $(e.target).closest('.card').css('overflow', 'hidden');
     $(this).find('.card-reveal').css({
       display: 'block'
     }).velocity('stop', false).velocity({
@@ -34,7 +34,9 @@ $(document).ready(function() {
       queue: false,
       easing: 'easeInOutQuad'
     });
+
   }).mouseleave(function(e) {
+    // Make Reveal animate down and display none
     $(this).find('.card-reveal').velocity({
       translateY: 0
     }, {
